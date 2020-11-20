@@ -1,3 +1,32 @@
-int const fps = 25;
+int const fps = 50;
 int const game_window_width = 80;
 int const game_window_height = 20;
+
+map<string, int> colors{
+    {"Black", 0},
+    {"Blue", 1},
+    {"Green", 2},
+    {"Cyan", 3},
+    {"Red", 4},
+    {"Magenta", 5},
+    {"Brown", 6},
+    {"LightGray", 7},
+    {"DarkGray", 8},
+    {"LightBlue", 9},
+    {"LightGreen", 10},
+    {"LightCyan", 11},
+    {"LightRed", 12},
+    {"LightMagenta", 13},
+    {"Yellow", 14},
+    {"White", 15}
+};
+
+struct pixel {
+    char symbol;
+    int color;
+    int background;
+};
+
+int stars_sparsity = 32;
+int stars_diversity = 16;
+long int frame = 0;
