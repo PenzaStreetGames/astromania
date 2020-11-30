@@ -9,6 +9,14 @@ struct pixel {
     int background = 0;
 };
 
+struct spaceship {
+    int x = 1;
+    int y = 0;
+    int x_size = 9;
+    int y_size = 5;
+};
+
 int stars_sparsity = 32;
 int stars_diversity = 16;
 long int frame = 0;
+

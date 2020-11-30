@@ -1,3 +1,5 @@
+#include <string>
+
 int const fps = 50;
 int const game_window_width = 80;
 int const game_window_height = 20;
@@ -25,6 +27,13 @@ struct pixel {
     char symbol;
     int color;
     int background;
+};
+
+struct spaceship {
+    int x = 1;
+    int y = 0;
+    int x_size = 9;
+    int y_size = 5;
 };
 
 int stars_sparsity = 32;
